@@ -7,12 +7,12 @@ A 3D-printed walking robot originally designed as a hexapod. Built around servo-
 
 ## Status
 
-**In progress** — reviving a project after ~1 year on pause. Currently mid-migration from Arduino Uno to ESP32 DevKitC, in the process of reprinting all leg and body models.
+**In progress**: reviving a project after ~1 year on pause. Currently mid-migration from Arduino Uno to ESP32 DevKitC, in the process of reprinting all leg and body models.
 
 ## Overview
 
 - **Design:** 6-legged hexapod, 3 servos per leg (18x MG996S)
-- **Controller migration:** Arduino Uno → ESP32 DevKitC
+- **Controller migration:** Arduino Uno -> ESP32 DevKitC
 - **Why ESP32:** built-in WiFi/BLE removes the need for a separate wireless module, much MUCH more computation power
 
 ## Hardware
@@ -33,7 +33,7 @@ Key design decisions:
 - **PCA9685 power split:** logic (`VCC`) is fed from the ESP32's 3.3V line for correct I2C level matching; the servo rail (`V+`) is separate and can run up to 6V.
 - **Why:** Isolating its supply was necessary for reliable operation under servo load to avoid triggering the ESP32's brownout detection.
 
-## Migration Notes (Arduino → ESP32)
+## Migration Notes (Arduino -> ESP32)
 
 - Removing the HC-05 Bluetooth module entirely as the ESP32's onboard wireless makes it redundant.
 - Potentially changing the TFT display to an OLED for real-time animations rather than static face.
@@ -43,7 +43,7 @@ Key design decisions:
 
 Before committing to the physical build, gait patterns and leg kinematics were prototyped in a Unity simulation to validate movement logic ahead of hardware.
 
-![Unity simulation](https://github.com/user-attachments/assets/dc9ee95e-e21c-4e50-a68a-48b4a0adb41d)
+![Unity simulation](https://github.com/user-attachments/assets/dc9ee95e-e21c-4e50-a68a-48b4a0adb41d)  
 *Leg kinematics/gait simulation in Unity*
 
 
@@ -57,10 +57,10 @@ https://github.com/user-attachments/assets/92b3b6fd-e322-4a81-b554-cf44252994d0
 
 *single leg tested in isolation*
 
-**Prior prototype — full gait**
+**Prior prototype - full gait**
 
-https://github.com/user-attachments/assets/71469305-5b4b-47e6-905a-ad87a0b493c0    
-*Earlier prototype with legs walking (pre-quadruped reconfiguration)*
+https://github.com/user-attachments/assets/6f3593b4-761a-4cba-86d1-77666a1db1fa  
+*Earlier prototype with gait cycle*
 
 ## Roadmap
 
