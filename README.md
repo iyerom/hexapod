@@ -60,6 +60,7 @@ https://github.com/user-attachments/assets/92b3b6fd-e322-4a81-b554-cf44252994d0
 **Prior prototype - full gait**
 
 https://github.com/user-attachments/assets/6f3593b4-761a-4cba-86d1-77666a1db1fa  
+
 *Earlier prototype with gait cycle*
 
 ## Roadmap
